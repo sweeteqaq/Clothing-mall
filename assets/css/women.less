@@ -1,0 +1,135 @@
+.content{
+    .container{
+        .top{    
+            cursor: pointer; 
+            .top1{
+                text-align: center;
+                padding: 1em;
+                h1{
+                    font-size: 3em;
+                    font-weight: bold;
+                }
+            }
+            .bottom{
+                text-align: center;
+                margin-bottom: 5em;
+                
+                a{
+                    padding: 0em 2em;
+                    color: #000;
+                    border-bottom:3px solid transparent;
+
+                    &:hover{
+                        border-bottom:3px solid red;
+                        color:red;
+                     } 
+                }
+                
+            }
+                           
+
+        }
+        .center{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 10em;
+            .clothes{
+                width: 25%;
+                
+                
+
+                .bottoms{
+                    margin-top: 5em;
+                    text-align: center;
+                   
+                    span{
+                        font-weight: bold;
+                    }
+                }
+                .top{
+                   text-align: center;
+                 
+                }
+                .bottom{
+                    text-align: center;
+                    
+                    span{
+                        font-weight: bold;
+                    }
+                }
+                
+            }
+            .radws{
+                width: 8em;
+                height: 3em;
+                border-radius: 25px;
+                background: red;
+                margin: 0 auto;
+                text-align: center;
+                padding: .8em;
+                margin-top: 8em;
+                box-shadow: 0px 15px 15px 0px #f8b7b7;
+                cursor: pointer;
+                transition: all linear .5s;
+                
+
+                p{
+                    color:#fff;
+
+                    
+                }
+                &:hover{
+                    transform: translateY(-10px);
+                }
+            }
+        }
+    }
+    @media screen and(max-width:450px) {
+            &{
+                .container{
+                    .top{
+                        .bottom{
+                            a{
+                                padding: 0em 0em;
+                            }
+                        }
+                    }
+                }
+            }
+    }
+    @media screen and(max-width: 430px) {
+        &{
+           .container{
+               .center{
+                   .clothes{
+                       width: 26%;
+
+                       .bottoms{
+                           margin-top: 3em;
+                           span{
+                               font-size: 0.8em;
+                           }
+                       }
+                       .bottom{
+                           font-size: 0.8em;
+                       }
+                   }
+               }
+           } 
+        }
+    }
+    @media screen and(max-width:350px) {
+        &{
+            .container{
+                .center{
+                    .clothes{
+                        .bottom{
+                            font-size: 0.8em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

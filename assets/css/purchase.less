@@ -1,0 +1,225 @@
+.content{
+    .container{
+        .top{
+            display: flex;
+            width: 100%;
+            margin-bottom: 4em;
+            .left{
+                width: 50%;
+            }
+            .right{
+                width: 50%;
+                margin-left: 2em;
+                .flower{
+                    width: 75px;
+                    height: 40px;
+                    background: #000;
+                    text-align: center;
+                    padding: .8em 0em;
+                    margin-bottom: 2em;
+
+                    .p{
+                        color: #fff;
+                    }
+                }
+                .h1{
+                    font-size: 2em;
+                    font-weight: bold;
+                    
+                }
+                
+
+                .money{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 4em;
+                    p{
+                        font-size: 2em;
+                        color: red;
+                    }
+                }
+                .box{
+                    .math1{
+                        margin-bottom: 1em;
+                        cursor: pointer;
+                    }
+                    .math2{
+                        margin-bottom: 1em;
+                        cursor: pointer;
+                    }
+                    .math3{
+                        margin-bottom: 2em;
+                        cursor: pointer;
+                    }
+                }
+                .list{
+                    display: flex;
+                    .left{
+                        width: 30%;
+                        .left2{
+                            width: 10em;
+                            height: 3em;
+                            border-radius: 25px;
+                            background: red;
+                            text-align: center;
+                            box-shadow: 0px 15px 10px 0px #f8b2b2;
+
+                            p{
+                                color: #fff;
+                                padding: .8em;
+                            }
+                        }
+                    }
+                    .right{
+                        width: 50%s;
+                        .right2{
+                            width: 10em;
+                            height: 3em;
+                            border-radius: 25px;
+                            background: #1f2022;
+                            text-align: center;
+                            box-shadow: 0px 15px 10px 0px #c7c8c8;
+
+                            p{
+                                padding: 0.8em;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+                           
+            }
+         
+            
+        }
+
+     
+        .bottom{
+            .topss{
+                text-align: center;
+
+                h1{
+                    font-size: 2em;
+                    font-weight: bold;
+                }
+            }
+
+            .bottom1{
+                display: flex;
+                width: 100%;
+                
+                .letp{
+                    width: 100%;
+                    text-align: center;
+                    .btn{
+                        
+                        span{
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+ 
+    }
+
+    @media screen and(max-width:450px){
+        &{
+            .container{
+                .top{
+                    .right{
+                        .list{
+                            display: block;
+                            .left{
+                                margin-bottom: 5px;
+                                    .left2{
+                                        width: 7em;
+                                        height: 3em;
+                                        }
+                            }
+                            .right{ 
+                                margin-left: 2px;
+                                .right2{
+                                 width: 7em;
+                                    height: 3em;
+                                     }
+                            }
+                        }
+                        .h1{
+                            font-size: .8em;
+                        }
+                        .money{
+                            margin-bottom: 1em;
+                            p{
+                                font-size: 1em;
+                            }
+                        }
+                        .box{
+                            
+                            .math1{
+                                img{
+                                    width: 60%;
+                                }
+                            }
+                            .math2{
+                                img{
+                                    width: 60%;
+                                }
+                            }
+                            .math3{
+                                margin-bottom: 1em;
+                                img{
+                                    width: 70%;
+                                }
+                            }
+                        }
+                    }
+                }
+                .bottom{
+                    .bottom1{
+                        flex-wrap: wrap;
+
+                        .letp{
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        } 
+ }
+   @media screen and(max-width:1000px) {
+       &{
+           .container{
+            .list{
+                .right{
+                    .right2{
+                        margin-left: 3em;
+                    }
+                }
+            }
+           }
+       }
+   }
+
+   @media screen and(max-width:650px) {
+       &{
+           .container{
+               .top{
+                   .right{
+                       .list{
+                           display: block;
+                           .left{
+                               margin-bottom: 5px;
+                           }
+                           .right{
+                               margin-left: -3em;
+                           }
+                       }
+                   }
+               }
+           }
+       }        
+           
+    }       
+   
+}
