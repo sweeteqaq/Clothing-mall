@@ -1,4 +1,5 @@
 // 轮播图 
+.banner{
     .carousel{
             .carousel-inner{ 
                 .item{
@@ -15,6 +16,7 @@
                     
         }
     }
+} 
 
 // 私人订制
 .work{
@@ -62,6 +64,17 @@
             
         }
     }   
+    @media screen and(max-width:400px) {
+        &{
+            .container{
+                .top{
+                    h1{
+                        font-size: 1.5em;
+                    }
+                }
+            }
+        }
+    }
 }
 
 // 男女装
@@ -242,222 +255,102 @@
 
 // 今年流行
 .news{
-    
     .container{
-        position: relative;
-        .box{
-            width: 4em;
-            height: 4em;
-            line-height: 4em;
-            border-radius: 100%;
-            border:2px solid red ;
-            text-align: center;
-            color: red;
-            position: absolute;
-            font-weight: bold;
-
-            p{
-                font-size: 1em;
-            }
-        }
-        .box1{
-            width: 4em;
-            height: 4em;
-            line-height: 4em;
-            border-radius: 100%;
-            border:2px solid #2ac4e5 ;
-            text-align: center;
-            color: #2ac4e5;
-            position: absolute;
-            top: 10%;
-            left: 75%;
-            font-weight: bold;
-
-            p{
-                font-size: 1em;
-            }
-
-        }
-        .box2{
-            width: 4em;
-            height: 4em;
-            line-height: 4em;
-            border-radius: 100%;
-            border:2px solid red ;
-            text-align: center;
-            color: red;
-            position: absolute;
-            top: 58%;
-            left: 51%;
-            font-weight: bold;
-
-            p{
-                font-size: 1em;
-            }
-
-        }
-
-        .popular{
+        .year{
             text-align: center;
             h1{
                 font-size: 3em;
-                font-weight: bold;
+                letter-spacing: 2px;
             }
         }
-        .top{
-            display: flex;
-            width: 25%;
-            
-            
-        }
-        .top1{
-            display: flex;
-           width: 100%; 
-           
-           .top2{
-               width: 25%;
-               text-align: center;
+        .popular{
+            .up{
+                display: flex;
+                width: 100%;
+                .tqp{
+                    width: 25%;
+                    .img3{
+                        margin-bottom: 2em;
+                    }
+                    .word{
+                        text-align: center;
 
-               a{
-                   color: red;
-               }
-              
-           }
-        }
-    }
-    .bottom{
-        display: flex;
-        width: 25%;
-        justify-content: space-between;
-    }
+                        span{
+                            font-weight: bold;
+                        }
+                        p{
+                            a{
+                                color: red;
+                            }
+                        }
+                        
+                    }
+                   
+                    
+                }
+            }
+            .bottom{
+                display: flex;
+                width: 100%;
+                .tqp{   
+                    width: 25%;
+                    text-align: center;
 
-    @media screen and(max-width:400px) {
-        &{
-            .container{
-                .box{
-                    width: 2em;
-                    height: 2em;
-                    line-height: 2em;
-                    left: 0;
-                    border: 1px solid red;
-                    p{
-                        font-size: .5em;
+                    .word{
+                        text-align: center;
+                        span{
+                            font-weight: bold;
+                            
+                        }
+                        p{
+                            a{
+                                color: red;
+                            }
+                        }
+                        
                     }
                 }
-                .box1{
-                    width: 2em;
-                    height: 2em;
-                    line-height: 2em;
-                    left: 71%;
-                    border: 1px solid #2ac4e5 ;
-                    p{
-                        font-size: .5em;
-                    }
-                }
-                .box2{
-                    width: 2em;
-                    height: 2em;
-                    line-height: 2em;
-                    left: 48%;
-                    top: 55%;
-                    border: 1px solid red;
-                    p{
-                        font-size: .5em;
-                    }
-                }
-
             }
         }
     }
-
-
-    @media screen and(max-width:500px) {
+    @media screen and(max-width:600px) {
         &{
             .container{
-                .box{
-                    width: 2em;
-                    height: 2em;
-                    line-height: 2em;
-                    left: 0;
-                    border: 1px solid red;
-                    p{
-                        font-size: .5em;
-                    }
-                }
-                .box1{
-                    width: 2em;
-                    height: 2em;
-                    line-height: 2em;
-                    left: 71%;
-                    border: 1px solid #2ac4e5 ;
-                    p{
-                        font-size: .5em;
-                    }
-                }
-                .box2{
-                    width: 2em;
-                    height: 2em;
-                    line-height: 2em;
-                    left: 48%;
-                    top: 55%;
-                    border: 1px solid red;
-                    p{
-                        font-size: .5em;
-                    }
-                }
-
-
-
                 .popular{
-                    h1{
-                        font-size: 2em;
+                    .up{
+                        .tqp{
+                            .img3{
+                                margin-bottom: 1em;
+                            }
+                        }
                     }
                 }
             }
         }
     }
-
-
-    // @media screen and(max-width:600px) {
-    //     &{
-    //         .container{
-    //             .box{
-    //                 width: 3em;
-    //                 height: 3em;
-    //                 line-height: 3em;
-    //                 left: 5px;
-    //                 border: 1px solid red;
-    //                 p{
-    //                     font-size: .5em;
-    //                 }
-    //             }
-    //             .box1{
-    //                 width: 3em;
-    //                 height: 3em;
-    //                 line-height: 3em;
-    //                 left: 75%;
-    //                 border: 1px solid #2ac4e5 ;
-    //                 p{
-    //                     font-size: .5em;
-    //                 }
-    //             }
-    //             .box2{
-    //                 width: 3em;
-    //                 height: 3em;
-    //                 line-height: 3em;
-    //                 left: 50%;
-    //                 top: 57%;
-    //                 border: 1px solid red;
-    //                 p{
-    //                     font-size: .5em;
-    //                 }
-    //             }
-
-    //         }
-    //     }
-    // }
-
+    @media screen and(max-width:450px) {
+        &{
+            .container{
+                .popular{
+                    .up{
+                        flex-wrap: wrap;
+                        .tqp{
+                            width: 49%;
+                        }
+                    }
+                    .bottom{
+                        flex-wrap: wrap;
+                        .tqp{
+                           width: 49%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
+
 
 //最新时装介绍
 .life{
