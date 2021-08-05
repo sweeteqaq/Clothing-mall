@@ -4,6 +4,7 @@
             display: flex;
             width: 100%;
             margin-bottom: 4em;
+            
             .left{
                 width: 50%;
             }
@@ -158,18 +159,18 @@
                             
                             .math1{
                                 img{
-                                    width: 60%;
+                                    width: 30%;
                                 }
                             }
                             .math2{
                                 img{
-                                    width: 60%;
+                                    width: 30%;
                                 }
                             }
                             .math3{
                                 margin-bottom: 1em;
                                 img{
-                                    width: 70%;
+                                    width: 40%;
                                 }
                             }
                         }
@@ -221,5 +222,21 @@
        }        
            
     }       
-   
+   @media screen and(max-width:760px) {
+       &{
+           .container{
+               .top{
+                   flex-wrap: wrap;
+
+                   .left{
+                       width: 100%;
+                       margin-bottom: 1em;
+                   }
+                   .right{
+                       width: 100%;
+                   }
+               }
+           }
+       }
+   }
 }

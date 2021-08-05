@@ -4,14 +4,19 @@
     top: 0;
     left: 0;
     width: 100%;
+
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        border-color: #fff;
+    }
     .navbar{
         background: #fff;
         border: 0;
-        
+       
+          
         .container{
             .navbar-header{
                 .navbar-brand{
-                    padding: 0px 0px;
+                    padding: 5px 20px;
                 }
             }
         }
@@ -30,10 +35,10 @@
             border: 1px solid #ccc;
             border-radius: 100%;
             text-align: center;
-            line-height: 3em;
+            line-height: 2.2em;
             position: relative;
             left: 90%;
-            margin-top: -3em;
+            margin-top: -3.5em;
 
             img{
                 margin-top: -6em;
@@ -74,6 +79,7 @@
                             a{
                                 text-align: center;
                             }
+                            
                         }
                     
                 }
@@ -82,6 +88,14 @@
                 }
             }
         }
+    }
+
+    @media screen and(max-width:770px) {
+            &{
+                .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+                    width: 100%;
+                }
+            }
     }
 }
 
